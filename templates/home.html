@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="static\style.css">
+    <title>Fruit Evaluator</title>
+</head>
+<body>
+    <header>
+        <h1>Fruit Evaluator</h1>
+    </header>
+    <section class="banner">
+        <img src="static/fruit_img_2.png" alt="FruitEvaluator welcome image">
+        <div class="welcome">
+            <h2>Welcome to <br><span>Fruit Evaluator</span></h2>
+        </div>
+    </section>
+    <div class="adjust">
+        <h1><br></h1>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="https://github.com/SiddharthSunilPatil/fruit_classification_conv_neural_nets">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/siddharth-patil-702760a5">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Fresh or Rotten?</span>?</h2>
+            <p>If you have a fruit from any of the following category simply upload your 
+                fruit image below and click on the "Submit" button</p>
+            <h3>Apple, Banana , Grape, Guave, Jujube, Orange, Pomegranate, Strawberry</h3>
+        </article>
+    </main>
+    <section class="display">
+        <ul>
+            <li><img src="data:image/png;base64,{{ read_img }}" alt="sample_fruit_image"></li>
+            <li>
+                <form action="/classify_image" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" accept="image/*" required><br>
+                    <button type="submit">Upload</button>
+                </form>
+                <p>Predicted class:  <span>{{class_name}}</span></p>
+                <p>Confidence: <span>{{confidence}} %</span></p>
+            </li>
+
+        </ul>
+    </section>
+    <footer>
+        <p class="copyright">SiddharthSunilPatil 2024 Evodia Tech</p>
+    </footer>
+
+</body>
+</html>

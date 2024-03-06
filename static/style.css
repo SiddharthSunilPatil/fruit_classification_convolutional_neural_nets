@@ -1,0 +1,155 @@
+body, ul, li, h1, h2, h3{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+header{
+    background-color: #f3661a;
+    padding: 17px;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    font-size: 12px;   
+}
+header h1{
+    color: #ffffff;
+    border: 8px solid #ffffff;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 36px;
+}
+.banner{
+    position: relative;
+    top:92px;
+    
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    background-color: #f3f9aa;
+    padding: 10px;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+}
+.banner h2{
+    font-size: 20px;
+    color: green
+}
+.banner h2 span{
+    font-size: 1.3em;
+}
+.adjust{
+    padding: 6px;
+}
+nav{
+    background-color: #F4F4F4;
+    padding: 20px; 
+    position: sticky;
+    top: 95px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width: 50%;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+}
+nav li a{
+    text-decoration: none;
+    color: #4B4B4B;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color: #f3661a;
+    font-size: 24px;
+}
+article p{
+    font-size: 16px;
+    line-height: 1.5em;
+}
+article h3{
+    font-size: 16px;
+}
+.display ul{
+    white-space: nowrap;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.display ul li{
+    width: 50%;
+    font-size: 20px;
+    display: inline-block;
+}
+.display ul li img{
+    width: 200px;
+}
+.display ul li p{
+    font-size: 16px;    
+}
+.display ul li p span{
+    color: #f3661a;
+    font-size: 24px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+/*pseudo classes */
+nav li a:hover{
+    text-decoration: underline;
+}
+
+/* Responsive styles*/
+
+@media screen and (max-width:1000px){
+    header{
+        font-size: 8px;
+    }
+
+    .banner h2{
+        font-size: 12px;
+    }
+
+    nav li{
+        font-size: 12px;
+    }
+    article h2{
+        font-size: 12px;
+    }
+    article p{
+        font-size: 12px;
+    }
+    article h3{
+        font-size: 12px;
+    }
+    .display ul li{
+        font-size: 12px;
+    }
+    .display ul li p{
+        font-size: 12px;
+    }
+    .display ul li p span{
+        font-size: 12px;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
