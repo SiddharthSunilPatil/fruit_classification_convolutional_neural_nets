@@ -7,6 +7,8 @@ import tensorflow as tf
 from src.logger import logging
 import keras
 import base64
+from src.pipelines.predict_pipeline import PredictPipeline
+
 
 
 application=Flask(__name__)
@@ -18,9 +20,6 @@ class_names=['FreshApple','FreshBanana','FreshGrape','FreshGuava',
              'FreshJujube','FreshOrange','FreshPomegranate','FreshStrawberry',
              'RottenApple','RottenBanana','RottenGrape','RottenGuava',
              'RottenJujube','RottenOrange','RottenPomegranate','RottenStrawberry']
-
-loaded_model=keras.saving.load_model('model/saved_model.keras')
-logging.info("Model successfully loaded")
 
 @app.route('/')
 def index():
@@ -72,12 +71,13 @@ def ClassifyImage():
         logging.info("Image transformation completed")
 
         # predicting / classifying the image
-        predictions = loaded_model.predict(image)
+        predictor=PredictPipeline()
+        predictions=predictor.predictdata(image)
 
         predicted_class = class_names[np.argmax(predictions[0])]
         confidence = np.round(100*(np.max(predictions[0])),2)
         logging.info("Prediction successful")
-        
+
 
         
         return (
