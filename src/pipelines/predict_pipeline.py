@@ -1,10 +1,11 @@
 import os
 import numpy as np
+import tensorflow as tf
 import keras
 from src.logger import logging
 from src.exception import CustomException
 
-loaded_model=keras.saving.load_model('model\saved_model.keras')
+loaded_model=keras.saving.load_model("model\saved_model.keras")
 
 class PredictPipeline:
     def __init__(self) -> None:
