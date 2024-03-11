@@ -21,12 +21,9 @@ class_names=['FreshApple','FreshBanana','FreshGrape','FreshGuava',
              'RottenApple','RottenBanana','RottenGrape','RottenGuava',
              'RottenJujube','RottenOrange','RottenPomegranate','RottenStrawberry']
 
-@app.route('/')
-def index():
-    return render_template('index.html')
 
 #defining function for GET and POST methods
-@app.route('/classify_image',methods=['GET','POST'])
+@app.route('/',methods=['GET','POST'])
 def ClassifyImage():
     if request.method=="GET":
         return render_template('home.html')
