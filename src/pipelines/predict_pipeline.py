@@ -5,7 +5,8 @@ import keras
 from src.logger import logging
 from src.exception import CustomException
 
-loaded_model=keras.saving.load_model("model\saved_model.keras")
+model_path=os.path.join("model","saved_model.keras")
+loaded_model=keras.saving.load_model(model_path)
 
 class PredictPipeline:
     def __init__(self) -> None:
