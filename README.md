@@ -64,9 +64,9 @@ The dataset is a collection of 3200 images from 8 different fruit categories viz
 
 **1. Data Ingestion:** In this phase, the dataset is read using the keras preprocessing library and split into training dataset, test dataset and validation dataset
 
-**2. Data Transformation:** The concatenated data is then passed through a column transformer pipeline. Based on the variable the transformer performs various preprocessing treatments such as simple imputing, nominal encoding, ordinal encoding and stadard scaling. The transformed data is then passed to the model trainer.
+**2. Data transformation** Using the keras preprocessing library, a pipeline is defined for resizing the dataset to 256 X 256 pixels and rescaling. A second pipeline for data augmentation for creating more variation is defined by using random rotation and random flip available in the keras preprocessing library. 
 
-**3. Model Trainer:** Various models are tested to find out the best perfroming model based on Rott Mean Squred Error[RMSE] score. The best model found was Gradient Boosting Regressor. The model is then improved by hyperparameter tuning.
+**3. Model Trainer:** A model is compiled comprising multiple layers 
 
 **4. Prediciton Pipeline:** This pipleline converts input data into a dataframe and loads pickle files for data transformation and model training and predicts final results.
 
