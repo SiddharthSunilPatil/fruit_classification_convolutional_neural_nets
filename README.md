@@ -64,7 +64,7 @@ The dataset is a collection of 3200 images from 8 different fruit categories viz
 
 **1. Data Ingestion:** In this phase, the dataset is read using the keras preprocessing library and split into training dataset, test dataset and validation dataset
 
-**2. Data transformation** Using the keras preprocessing library, a pipeline is defined for resizing the dataset to 256 X 256 pixels and rescaling. A second pipeline for data augmentation for creating more variation is defined by using random rotation and random flip available in the keras preprocessing library. 
+**2. Model compilation** Using the keras layers library, a pipeline is defined for resizing the dataset to 256 X 256 pixels and rescaling. A second pipeline for data augmentation for creating more variation is defined by using random rotation and random flip.
 
 **3. Model Trainer:** A model is compiled comprising multiple layers 
 
