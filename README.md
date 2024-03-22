@@ -62,7 +62,7 @@ The dataset is a collection of 3200 images from 8 different fruit categories viz
  
 ## Project Approach
 
-**1. Data Ingestion:** In this phase, both test and train dataset are read from csv file. Since both train set and test set contain missing values, data is first concatenated and prepared for analysis.
+**1. Data Ingestion:** In this phase, the dataset is read using the keras preprocessing library and split into training dataset, test dataset and validation dataset
 
 **2. Data Transformation:** The concatenated data is then passed through a column transformer pipeline. Based on the variable the transformer performs various preprocessing treatments such as simple imputing, nominal encoding, ordinal encoding and stadard scaling. The transformed data is then passed to the model trainer.
 
