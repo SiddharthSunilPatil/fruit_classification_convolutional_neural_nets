@@ -1,8 +1,7 @@
 # Fruit classification convolutional neural network
 **Author:** Siddharth Patil.  
 
-![image](https://github.com/SiddharthSunilPatil/house_price_advanced_regression/blob/main/static/house_price_pred_1.jpg
-)
+![image](https://github.com/SiddharthSunilPatil/fruit_classification_convolutional_neural_nets/blob/main/static/fruit_img_2.png)
 
 ## Quicklinks
 [Jupyter notebook](https://github.com/SiddharthSunilPatil/fruit_classification_convolutional_neural_nets/blob/main/notebook/Fresh_Rotten_Fruit_Classification.ipynb)       
