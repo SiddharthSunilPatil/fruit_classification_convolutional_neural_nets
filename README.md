@@ -1,14 +1,11 @@
-## trial project
-
-
-# Housing Price Advanced Regression
+# Fruit classification convolutional neural network
 **Author:** Siddharth Patil.  
 
 ![image](https://github.com/SiddharthSunilPatil/house_price_advanced_regression/blob/main/static/house_price_pred_1.jpg
 )
 
 ## Quicklinks
-[notebook](https://github.com/SiddharthSunilPatil/house_price_advanced_regression/blob/main/Notebook/housingprice.ipynb)       
+[Jupyter notebook](https://github.com/SiddharthSunilPatil/fruit_classification_convolutional_neural_nets/blob/main/notebook/Fresh_Rotten_Fruit_Classification.ipynb)       
 [AWS deployment link](http://trialproject-env.eba-mmr3didc.us-east-2.elasticbeanstalk.com/classify_image)  
 [Dataset]( https://data.mendeley.com/datasets/bdd69gyhv8/1)
 
@@ -19,7 +16,7 @@
 1.1. Create a dirctory on your drive.  
 1.2. Open anaconda prompt and navigate to the directory with the command "cd (type your directory path)".  
 1.3. Launch VS code with command "code ."  
-1.4. Open new terminal and use command "git clone https://github.com/SiddharthSunilPatil/house_price_advanced_regression.git
+1.4. Open new terminal and use command "git clone https://github.com/SiddharthSunilPatil/fruit_classification_convolutional_neural_nets.git
 " to clone repository to existing directory.  
  
 **2. Setting up the environment**  
@@ -34,7 +31,7 @@
 
 **4. Downloading dataset**
 
-4.1. Download the dataset from "https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques".  
+4.1. Download the dataset from "https://data.mendeley.com/datasets/bdd69gyhv8/1".  
 4.2. Create a new folder in your cloned repository and copy and paste the downloaded data to this folder.    
 
 **5. Training the model**  
