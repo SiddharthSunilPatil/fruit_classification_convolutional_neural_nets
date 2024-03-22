@@ -66,13 +66,13 @@ The dataset is a collection of 3200 images from 8 different fruit categories viz
 
 **2. Data transformation** Using the keras layers library, a pipeline is defined for resizing and rescaling the dataset to 256 X 256 pixels. A second pipeline for data augmentation for creating more variation is defined by using random rotation and random flip. These pipelines are called in the model compiler.
 
-**3. Model compliation** A CNN model is compiled using the keras sequential library consisting of multiple layers. The starting layer is the data transformation pipeling described in step 2 followed by 5 sets of conv2D and maxpooling layers and with the flatten layer at the end. 
+**3. Model compliation** A CNN model is compiled using the keras sequential library consisting of multiple layers. The starting layer is the data transformation pipeline described in step 2 followed by 5 sets of conv2D and maxpooling layers and with the flatten and dense layer at the end.  
 
-**3. Model Trainer:** A model is compiled comprising multiple layers 
+**4. Model Trainer:** The train and validation data is passed to the model and training accuracy and validation loss is plotted against epochs. The model accuracy is more or less the same after 30 epochs. The model performance is tested against unseen test data.
 
-**4. Prediciton Pipeline:** This pipleline converts input data into a dataframe and loads pickle files for data transformation and model training and predicts final results.
+**5. Prediciton Pipeline:** This pipleline converts input image into tensor and loads a keras.model file for data transformation and model training and predicts final results.
 
-**5. Deployment:** The project is deployed on amazon elastic beanstalk as a flask application to predict house prices.
+**6. Deployment:** The project is deployed on amazon elastic beanstalk as a flask application to classify images.
 
 
 
