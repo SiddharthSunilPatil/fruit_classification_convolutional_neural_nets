@@ -64,7 +64,9 @@ The dataset is a collection of 3200 images from 8 different fruit categories viz
 
 **1. Data Ingestion:** In this phase, the dataset is read using the keras preprocessing library and split into training dataset, test dataset and validation dataset
 
-**2. Model compilation** Using the keras layers library, a pipeline is defined for resizing the dataset to 256 X 256 pixels and rescaling. A second pipeline for data augmentation for creating more variation is defined by using random rotation and random flip.
+**2. Data transformation** Using the keras layers library, a pipeline is defined for resizing and rescaling the dataset to 256 X 256 pixels. A second pipeline for data augmentation for creating more variation is defined by using random rotation and random flip. These pipelines are called in the model compiler.
+
+**3. Model compliation** A CNN model is compiled using the keras sequential library consisting of multiple layers. The starting layer is the data transformation pipeling described in step 2 followed by 5 sets of conv2D and maxpooling layers and with the flatten layer at the end. 
 
 **3. Model Trainer:** A model is compiled comprising multiple layers 
 
