@@ -68,6 +68,7 @@ class ModelTrainer:
 
             #building the model
             input_shape=(batch_size,image_size,image_size,channels)
+            
             model=keras.Sequential([
                 Resizing, Rescaling, Flipping, Rotating,
                 keras.layers.Conv2D(16,(3,3),activation='relu',input_shape=input_shape),
@@ -84,7 +85,7 @@ class ModelTrainer:
                 keras.layers.Dense(64,activation='relu'),
                 keras.layers.Dense(n_classes,activation='softmax')
             ])
-
+            
             model.build(input_shape=input_shape)
 
             logging.info("model building completed")
