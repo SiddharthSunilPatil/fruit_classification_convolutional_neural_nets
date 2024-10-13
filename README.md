@@ -5,7 +5,7 @@
 
 ## Quicklinks
 [Jupyter notebook](https://github.com/SiddharthSunilPatil/fruit_classification_convolutional_neural_nets/blob/main/notebook/Fresh_Rotten_Fruit_Classification.ipynb)       
-[AWS deployment link](http://trialproject-env.eba-mmr3didc.us-east-2.elasticbeanstalk.com/classify_image)  
+[AWS deployment link](http://fruitclassification-env.eba-m4tfizv2.us-east-2.elasticbeanstalk.com/classify_image)  
 [Dataset]( https://data.mendeley.com/datasets/bdd69gyhv8/1)
 
 ## Setup Instructions
