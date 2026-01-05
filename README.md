@@ -24,8 +24,8 @@ This project builds an end-to-end deep learning pipeline for fruit freshness cla
 
 ## Application Screenshots
 
-![image]()
-![image]()
+![image](https://github.com/SiddharthSunilPatil/fruit_classification_convolutional_neural_nets/blob/main/static/fruit_eval_02.png)
+![image](https://github.com/SiddharthSunilPatil/fruit_classification_convolutional_neural_nets/blob/main/static/fruit_eval_03.png)
 
 ## Quicklinks
 [Jupyter notebook](https://github.com/SiddharthSunilPatil/fruit_classification_convolutional_neural_nets/blob/main/notebook/Fresh_Rotten_Fruit_Classification.ipynb)       
